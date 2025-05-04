@@ -1,0 +1,53 @@
+NBA 2024-25 Regular Season Performance Analysis
+Capstone Project – Data Analyst Course, Epicode
+Author: Matteo Faedda
+Date: 05/05/2025
+
+1. Project Objective
+The objective of the project was to develop an interactive tool in Power BI for analyzing the performance of teams and individual players during the 2024-25 NBA regular season. The report is designed to offer a complete overview, both quantitative and visual, of the seasonal trend, highlighting the main performance indicators and providing useful insights for scouting activities and match preparation.
+In particular, the project also focuses on the analysis of shots through shot maps that visualize the distribution and effectiveness of conclusions to the basket.
+
+2. Datasets used
+The data used for the project were obtained through automated web scraping with the Selenium library from the official NBA website and then modeled with Python to make them suitable for drafting a report. The process allowed to systematically collect the main team and individual statistics updated in real time.
+The main categories of data collected include:
+- Player statistics (points, assists, rebounds, minutes, etc.)
+- Team statistics
+- Shot information (shot coordinates, outcome, type of shot, author, etc.)
+
+3. Data modeling and transformation
+The data was imported and transformed using Power Query, with the following main steps:
+- Cleaning of raw data, elimination of irrelevant columns and management of any missing values
+- Union and relationship between tables: for example, shots are linked to players and teams through consistent identifiers
+- Creation of calculated fields (e.g. Clutch Shot, etc.)
+The structure is based on a relational model that allows a multidimensional analysis of the information.
+
+4. DAX Measures
+A number of custom DAX measures have been developed, including:
+- Points per Game, Assists per Game, Defensive and Offensive Rebounds
+- Shooting percentages (FG%, 3P%, etc.)
+- Other measures to create the desired graphical elements.
+All measures are dynamic and adapt to the filters applied by the user in real time.
+
+5. Visualizations and Interactivity
+The report is divided into several thematic sections:
+- General team dashboard
+- Detailed player performance
+- Direct player comparison
+- Advanced shot analysis via shot maps
+Shot maps are one of the key components of the project: they are scatter plots overlaid on the layout of the basketball court, with a visual representation of the distribution and effectiveness of shots. The color and size of the dots represent the success percentage and the frequency of shots respectively.
+
+6. Final considerations
+The project represents a practical example of the integration between automated data collection, analytical modeling and interactive visualization.
+It was entirely realized autonomously as a final capstone project of the Epicode Data Analyst course, with the aim of demonstrating transversal skills in:
+- Data collection via web scraping and data modeling using Python
+- Data cleaning and data modeling in Power BI
+- Exploratory analysis of sports data
+- Visual design and user experience via intuitive dashboards
+
+7. Future developments
+Possible extensions of the project include:
+- Inclusion of playoffs or multi-season comparison
+- Integration of machine learning for performance prediction
+- Video embed (e.g. highlights of selected shots)
+- Optimization for mobile devices
+- Implementation of new visuals depending on user needs
